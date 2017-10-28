@@ -17,11 +17,11 @@ const userSchema = new Schema(
     },
     credits: {
       type: Number,
-    },
+    }
+  },
     {
       timestamps: true
     }
-  }
 );
 
 const UserModel = mongoose.model('User', userSchema);

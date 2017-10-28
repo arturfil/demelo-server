@@ -1,5 +1,5 @@
 const express  = require('express');
-const bcrypt   = require('bcyprt');
+const bcrypt   = require('bcrypt');
 const passport = require('passport');
 
 const UserModel = require('../models/user-model.js');
@@ -11,7 +11,7 @@ router.post('/process-signup', (req, res, next) => {
   if(!req.body.signupFullName ||
       !req.body.signupUsername ||
       !req.body.signupPassword) {
-        res.status.(400).json(
+        res.status(400).json(
           {errorMessage: "We need a full name, username and password"}
         );
         return;
